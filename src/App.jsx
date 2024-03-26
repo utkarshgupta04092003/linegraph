@@ -17,7 +17,6 @@ import {
 } from 'd3-shape';
 import { scalePoint } from 'd3-scale';
 
-import { socialMediaData as data } from './demo-data/data-visualization';
 
 const PREFIX = 'Demo';
 
@@ -74,6 +73,17 @@ const StyledChart = styled(Chart)(({ theme }) => ({
 }));
 
 const Demo = () => {
+
+  const data = [
+    { day: "Sun", facebook: 180, instagram: 200 },
+    { day: "Mon", facebook: 270, instagram: 230 },
+    { day: "Tues", facebook: 220, instagram: 210 },
+    { day: "Wed", facebook: 180, instagram: 190 },
+    { day: "Thurs", facebook: 280, instagram: 240 },
+    { day: "Fri", facebook: 150, instagram: 170 },
+    { day: "Sat", facebook: 220, instagram: 210 },
+  ];
+  
   
   return (
     <Paper>
